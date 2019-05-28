@@ -1,0 +1,29 @@
+{
+  "name": "typescript-learn",
+  "version": "1.0.0",
+  "description": "This project helps learning typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeltsinGit/typescript-learn.git"
+  },
+  "author": "Leon Yalin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeltsinGit/typescript-learn/issues"
+  },
+  "homepage": "https://github.com/yeltsinGit/typescript-learn#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-import-resolver-typescript": "1.1.1",
+    "eslint-plugin-html": "5.0.5",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-json": "1.4.0"
+  },
+  "dependencies": {}
+}
