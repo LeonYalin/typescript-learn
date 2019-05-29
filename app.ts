@@ -1,3 +1,7 @@
-import { DIRECTIONS, tuple, str } from './ts/basics';
+import basics from './ts/basics';
+import functions from './ts/functions';
 
-console.log('Hello world!');
+(function main() {
+  basics();
+  functions();
+}());
