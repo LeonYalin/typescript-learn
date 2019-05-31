@@ -33,6 +33,7 @@ function overload(arg: any): void {
 
 export default function functions() {
   delimeterMsg('FUNCTIONS');
+  
   console.log('optional parameters example: no parameters', optional());
   console.log('optional parameters example: 1st and 3rd parameters', optional(1, 's'));
   console.log('rest parameters example', rest('rest', 1, 2, 3, 4, 5, 6, 7));

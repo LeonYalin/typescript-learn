@@ -6,6 +6,7 @@ enum DIRECTIONS { UP = 1, DOWN, LEFT, RIGHT };
 
 export default function basics() {
   delimeterMsg('BASICS');
+  
   const up: DIRECTIONS = DIRECTIONS.UP;
   console.log('Enum example:', DIRECTIONS);
   console.log('Chosen direction:', DIRECTIONS[up]);

@@ -1,14 +1,23 @@
+import delimeterMsg from "./utils";
+
+interface IAdditionalInfo {
+  age?: number,
+  weight?: number,
+  hobby?: string,
+}
+
 interface IPerson {
-  readonly id: string;
-  firstName: string,
-  lastName: string,
   fullName(): string;
-  sayHelloTo(name: string): string;
-  additionalInfo?: object;
+  sayHelloTo: IFunctionType;
+  additionalInfo?: IAdditionalInfo;
 }
 
 interface IStudent extends IPerson {
   average: number,
+}
+
+interface IFunctionType {
+  (name: string): string;
 }
 
 interface IMyArray {
@@ -23,4 +32,26 @@ interface INumberDictionary {
 
 interface IReadonlyStringArray {
   readonly [index: number]: string;
+}
+
+class Person implements IPerson {
+  private id: number = new Date().getTime();
+  constructor(private firstName: string, private lastName: string) {
+  }
+
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  sayHelloTo(name: string) {
+    return `Hello ${name}, I am ${this.fullName()}`;
+  }
+};
+
+export default function interfaces() {
+  delimeterMsg('INTERFACES');
+
+  const person : IPerson = new Person('Leon', 'Yalin');
+  console.log('create a class using interface:', person);
+  console.log('basic interface example:', person.sayHelloTo('World'));
 }
