@@ -6,17 +6,18 @@ interface IAdditionalInfo {
   hobby?: string,
 }
 
-interface IPerson {
+export interface IPerson {
   fullName(): string;
   sayHelloTo: IFunctionType;
   additionalInfo?: IAdditionalInfo;
+  toString?(): string;
 }
 
 interface IStudent extends IPerson {
   average: number,
 }
 
-interface IFunctionType {
+export interface IFunctionType {
   (name: string): string;
 }
 
