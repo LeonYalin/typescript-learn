@@ -25,5 +25,7 @@
     "eslint-plugin-import": "2.17.3",
     "eslint-plugin-json": "1.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "3.10.1"
+  }
 }
