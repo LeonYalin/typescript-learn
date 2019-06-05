@@ -48,7 +48,7 @@ const ClassExpression = class extends AbstractPerson {
   }
 }
 
-export default function classes() {
+function classes() {
   delimeterMsg('CLASSES');
 
   const person: AbstractPerson = new Person('Leon', 'Yalin');
@@ -60,5 +60,6 @@ export default function classes() {
   
   const classExpression = new ClassExpression();
   console.log('class expression example: ' + classExpression.getHobby());
-  
 }
+
+export { Person, Student, classes as default }

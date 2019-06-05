@@ -6,7 +6,7 @@ interface IAdditionalInfo {
   hobby?: string,
 }
 
-export interface IPerson {
+interface IPerson {
   fullName(): string;
   sayHelloTo: IFunctionType;
   additionalInfo?: IAdditionalInfo;
@@ -17,7 +17,7 @@ interface IStudent extends IPerson {
   average: number,
 }
 
-export interface IFunctionType {
+interface IFunctionType {
   (name: string): string;
 }
 
@@ -49,10 +49,12 @@ class Person implements IPerson {
   }
 };
 
-export default function interfaces() {
+function interfaces() {
   delimeterMsg('INTERFACES');
 
-  const person : IPerson = new Person('Leon', 'Yalin');
+  const person: IPerson = new Person('Leon', 'Yalin');
   console.log('create a class using interface:', person);
   console.log('basic interface example:', person.sayHelloTo('World'));
 }
+
+export { IFunctionType, IPerson, interfaces as default }
