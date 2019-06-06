@@ -6,6 +6,7 @@ import classes from './ts/classes';
 import modulesAndNamespaces from './ts/modulesAndNamespaces';
 import generics from './ts/generics';
 import typeDefinitions from './ts/typeDefinitions';
+import goingFurtherWithBasicTypes from './ts/goingFurtherWithBasicTypes';
 
 (function main() {
   basics();
@@ -15,4 +16,5 @@ import typeDefinitions from './ts/typeDefinitions';
   modulesAndNamespaces();
   generics();
   typeDefinitions();
+  goingFurtherWithBasicTypes();
 }());
