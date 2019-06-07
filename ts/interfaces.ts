@@ -1,4 +1,4 @@
-import delimeterMsg from "./utils";
+import delimeterMsg, { log } from "./utils";
 
 interface IAdditionalInfo {
   age?: number,
@@ -53,8 +53,8 @@ function interfaces() {
   delimeterMsg('INTERFACES');
 
   const person: IPerson = new Person('Leon', 'Yalin');
-  console.log('create a class using interface:', person);
-  console.log('basic interface example:', person.sayHelloTo('World'));
+  log('create a class using interface:', person);
+  log('\nbasic interface example:', person.sayHelloTo('World'));
 }
 
-export { IFunctionType, IPerson, interfaces as default }
+export { IFunctionType, IPerson, IStudent, interfaces as default }

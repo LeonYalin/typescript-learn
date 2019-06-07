@@ -1,10 +1,10 @@
 import { IPerson } from './interfaces';
-import delimeterMsg from "./utils";
+import delimeterMsg, { log } from "./utils";
 import { Person, Student } from "./classes";
 
 function printArray<T>(arr: Array<T>): void {
   for (const el of arr) {
-    console.log(el.toString());
+    log(el.toString());
   }
 }
 
@@ -42,10 +42,10 @@ class GenericClassWithUpperConstraint<T extends Number> {
 export default function generics() {
   delimeterMsg('GENERICS');
 
-  console.log('generics: using Array<T>', persons);
+  log('generics: using Array<T>', persons);
 
-  console.log('generics: generic functions:');
+  log('\ngenerics: generic functions:');
   printArray(persons);
   
-  console.log('generics: generic classes: ', new MyArray<Person>());
+  log('\ngenerics: generic classes: ', new MyArray<Person>());
 }

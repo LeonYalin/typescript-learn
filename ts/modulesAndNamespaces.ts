@@ -8,9 +8,8 @@ import delimeterMsg from "./utils";
 import { Utils } from './namespaces';
 import { Employee, IEmployee as IEmp,  } from './modules';
 
-
 export default function modulesAndNamespaces() {
   delimeterMsg('MODULES AND NAMESPACES');
 
-  console.log('namespace example: ', Utils.append('Hello ', 'World'));
+  utils.log('namespace example: ', Utils.append('Hello ', 'World'));
 }

@@ -1,4 +1,4 @@
-import delimeterMsg from './utils';
+import delimeterMsg, { log } from './utils';
 
 const str: string = 'aaa';
 const tuple: [string, number] = ["str", 1];
@@ -8,8 +8,8 @@ export default function basics() {
   delimeterMsg('BASICS');
   
   const up: DIRECTIONS = DIRECTIONS.UP;
-  console.log('Enum example:', DIRECTIONS);
-  console.log('Chosen direction:', DIRECTIONS[up]);
-  console.log('Tuple example:', tuple);
-  console.log('String example:', str);
+  log('Enum example:', DIRECTIONS);
+  log('\nChosen direction:', DIRECTIONS[up]);
+  log('\nTuple example:', tuple);
+  log('\nString example:', str);
 }
