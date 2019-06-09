@@ -7,6 +7,7 @@ import modulesAndNamespaces from './ts/modulesAndNamespaces';
 import generics from './ts/generics';
 import typeDefinitions from './ts/typeDefinitions';
 import goingFurtherWithBasicTypes from './ts/goingFurtherWithBasicTypes';
+import usingAdvancedTypeFeatures from './ts/usingAdvacedTypeFeatures';
 
 (function main() {
   basics();
@@ -17,4 +18,5 @@ import goingFurtherWithBasicTypes from './ts/goingFurtherWithBasicTypes';
   generics();
   typeDefinitions();
   goingFurtherWithBasicTypes();
+  usingAdvancedTypeFeatures();
 }());

@@ -44,8 +44,7 @@ export default function goingFurtherWithBasicTypes() {
   delimeterMsg('GOING FURTHER WITH BASIC TYPES');
 
   const [leon, nelly, ...rest] = persons;
-  log('rays destructuring example: \n' + leon + ',\n' + nelly + ',\n' + rest[0]);
-
+  log('arrays destructuring example: \n' + leon + ',\n' + nelly + ',\n' + rest[0]);
   destructuringParams(persons, { c: 'c', d: 'd' }, 123, 234, [1, 2, 34]);
   log('function params destructuring example:');
 

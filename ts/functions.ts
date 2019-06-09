@@ -35,6 +35,6 @@ export default function functions() {
   delimeterMsg('FUNCTIONS');
   
   log('optional parameters example: no parameters', optional());
-  log('\noptional parameters example: 1st and 3rd parameters', optional(1, 's'));
-  log('\nrest parameters example', rest('rest', 1, 2, 3, 4, 5, 6, 7));
+  log('optional parameters example: 1st and 3rd parameters', optional(1, 's'));
+  log('rest parameters example', rest('rest', 1, 2, 3, 4, 5, 6, 7));
 }

@@ -55,11 +55,11 @@ function classes() {
   log('create class example: ' + person);
 
   const student: Student = new Student('Nelly', 'Yalin', 82);
-  log('\nclass inheritance example: ' + student);
+  log('class inheritance example: ' + student);
   log('average is: ' + student.getAverage());
   
   const classExpression = new ClassExpression();
-  log('\nclass expression example: ' + classExpression.getHobby());
+  log('class expression example: ' + classExpression.getHobby());
 }
 
 export { Person, Student, classes as default }

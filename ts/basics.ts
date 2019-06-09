@@ -9,7 +9,7 @@ export default function basics() {
   
   const up: DIRECTIONS = DIRECTIONS.UP;
   log('Enum example:', DIRECTIONS);
-  log('\nChosen direction:', DIRECTIONS[up]);
-  log('\nTuple example:', tuple);
-  log('\nString example:', str);
+  log('Chosen direction:', DIRECTIONS[up]);
+  log('Tuple example:', tuple);
+  log('String example:', str);
 }

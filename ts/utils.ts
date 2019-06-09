@@ -1,6 +1,11 @@
-export default function delimeterMsg(str) {
+function delimeterMsg(str) {
   console.log(`\n*************** ${str} *****************\n`);
 }
-export function log(...args) {
+
+function log(...args: any[]) {
   console.log(...['\n', ...args]);
 }
+
+class Dummy {}
+
+export { log, Dummy, delimeterMsg as default };

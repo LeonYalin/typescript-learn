@@ -44,8 +44,8 @@ export default function generics() {
 
   log('generics: using Array<T>', persons);
 
-  log('\ngenerics: generic functions:');
+  log('generics: generic functions:');
   printArray(persons);
   
-  log('\ngenerics: generic classes: ', new MyArray<Person>());
+  log('generics: generic classes: ', new MyArray<Person>());
 }

@@ -54,7 +54,7 @@ function interfaces() {
 
   const person: IPerson = new Person('Leon', 'Yalin');
   log('create a class using interface:', person);
-  log('\nbasic interface example:', person.sayHelloTo('World'));
+  log('basic interface example:', person.sayHelloTo('World'));
 }
 
 export { IFunctionType, IPerson, IStudent, interfaces as default }

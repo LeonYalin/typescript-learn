@@ -10,6 +10,6 @@ export namespace Utils {
   }
 
   function privateFunc() {
-    console.log('this functio is private');
+    console.log('this function is private');
   }
 }
