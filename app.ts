@@ -8,6 +8,7 @@ import generics from './ts/generics';
 import typeDefinitions from './ts/typeDefinitions';
 import goingFurtherWithBasicTypes from './ts/goingFurtherWithBasicTypes';
 import usingAdvancedTypeFeatures from './ts/usingAdvacedTypeFeatures';
+import decorators from './ts/decorators';
 
 (function main() {
   basics();
@@ -19,4 +20,5 @@ import usingAdvancedTypeFeatures from './ts/usingAdvacedTypeFeatures';
   typeDefinitions();
   goingFurtherWithBasicTypes();
   usingAdvancedTypeFeatures();
+  decorators();
 }());
