@@ -9,6 +9,7 @@ import typeDefinitions from './ts/typeDefinitions';
 import goingFurtherWithBasicTypes from './ts/goingFurtherWithBasicTypes';
 import usingAdvancedTypeFeatures from './ts/usingAdvacedTypeFeatures';
 import decorators from './ts/decorators';
+import implementingAsynchroniousPatterns from './ts/implementingAsynchroniousPatterns';
 
 (function main() {
   basics();
@@ -21,4 +22,5 @@ import decorators from './ts/decorators';
   goingFurtherWithBasicTypes();
   usingAdvancedTypeFeatures();
   decorators();
+  implementingAsynchroniousPatterns();
 }());

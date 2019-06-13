@@ -1,3 +1,5 @@
+enum DIRECTIONS { UP = 1, DOWN, LEFT, RIGHT };
+
 function delimeterMsg(str) {
   console.log(`\n*************** ${str} *****************\n`);
 }
@@ -8,4 +10,4 @@ function log(...args: any[]) {
 
 class Dummy {}
 
-export { log, Dummy, delimeterMsg as default };
+export { DIRECTIONS, log, Dummy, delimeterMsg as default };

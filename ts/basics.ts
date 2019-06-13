@@ -4,7 +4,7 @@ const str: string = 'aaa';
 const tuple: [string, number] = ["str", 1];
 enum DIRECTIONS { UP = 1, DOWN, LEFT, RIGHT };
 
-export default function basics() {
+function basics() {
   delimeterMsg('BASICS');
   
   const up: DIRECTIONS = DIRECTIONS.UP;
@@ -13,3 +13,5 @@ export default function basics() {
   log('Tuple example:', tuple);
   log('String example:', str);
 }
+
+export { basics as default }
